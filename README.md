@@ -1,14 +1,22 @@
-# /create with Cloudflare Workers
+# slash-counter
 
-A [slash-create](https://npm.im/slash-create) template, using [Cloudflare Workers](https://workers.cloudflare.com).
+A [slash-create](https://npm.im/slash-create) service, built using [Cloudflare Workers](https://workers.cloudflare.com).
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Snazzah/slash-create-worker)
+All command and component usage is designed to do the least operations possible for an interaction.
+
+- `/counter` - Initialize a counter for the current channel
+- `play-classic` - The default button, to handle the core game
+
+*If the counter runs out, the button disables itself upon the next interaction.*
+---
+
+> Setup instructions derived from template.
 
 ## Getting Started
 ### Cloning the repo
 You can either use degit to locally clone this repo without git, or [create a new repo from this template](https://github.com/Snazzah/slash-create-worker/generate) and clone that.
 ```sh
-npx degit Snazzah/slash-create-worker
+npx degit TinkerStorm/slash-counter
 ```
 
 After that, make sure to install dependencies using npm or yarn:

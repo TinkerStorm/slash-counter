@@ -1,4 +1,5 @@
 import { commands } from './commands';
+import { registerComponents } from './components';
 import { SlashCreator, CFWorkerServer } from './shim';
 
 export const creator = new SlashCreator({
@@ -6,6 +7,8 @@ export const creator = new SlashCreator({
   publicKey: DISCORD_PUBLIC_KEY,
   token: DISCORD_BOT_TOKEN
 });
+
+registerComponents(creator);
 
 creator.withServer(new CFWorkerServer()).registerCommands(commands);
 
