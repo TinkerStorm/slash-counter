@@ -8,6 +8,7 @@ All command and component usage is designed to do the least operations possible 
 - `play-classic` - The default button, to handle the core game
 
 *If the counter runs out, the button disables itself upon the next interaction.*
+
 ---
 
 > Setup instructions derived from template.
